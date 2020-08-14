@@ -141,7 +141,13 @@ found 1 high severity vulnerability
 
 ![main](./images/main.png)
 
+### router
 
+![router](./images/router.png)
+
+### vuex
+
+![vuex](./images/store.png)
 
 
 
