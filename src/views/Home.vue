@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <div class="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">lifecycle</router-link>
+      <router-link to="/feature">feature</router-link>
     </div>
   </div>
 </template>
@@ -19,5 +19,7 @@ export default {
 .home
   padding 20px
   .nav
+    display flex
+    flex-direction column
     font-size 18px
 </style>
