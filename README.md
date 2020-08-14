@@ -96,6 +96,55 @@ npm i vue@next
 added 9 packages from 39 contributors, updated 1 package and audited 1309 packages in 10.77s
 ```
 
+[vue-cli-plugin-vue-next](https://github.com/vuejs/vue-cli-plugin-vue-next/blob/master/README.md)是帮助现有项目过渡到vue3的一个插件
+
+```
+vue add vue-next
+```
+
+```
+📦  Installing vue-cli-plugin-vue-next...
+
++ vue-cli-plugin-vue-next@0.1.3
+added 8 packages from 5 contributors, removed 9 packages, moved 1 package and audited 1318 packages in 13.076s
+
+51 packages are looking for funding
+  run `npm fund` for details
+
+found 1 high severity vulnerability
+  run `npm audit fix` to fix them, or `npm audit` for details
+✔  Successfully installed plugin: vue-cli-plugin-vue-next
+
+
+🚀  Invoking generator for vue-cli-plugin-vue-next...
+📦  Installing additional dependencies...
+
+added 12 packages from 46 contributors, removed 2 packages, updated 1 package and audited 1328 packages in 7.899s
+
+51 packages are looking for funding
+  run `npm fund` for details
+
+found 1 high severity vulnerability
+  run `npm audit fix` to fix them, or `npm audit` for details
+⚓  Running completion hooks...
+
+✔  Successfully invoked generator for plugin: vue-cli-plugin-vue-next
+```
+
+## 四、新旧对比
+
+### package.json
+
+![package](./images/package.png)
+
+### main.js
+
+![main](./images/main.png)
+
+
+
+
+
 ## 参考
 
 - https://github.com/vuejs/vue-next
