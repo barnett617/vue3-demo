@@ -30,5 +30,8 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
-
+.feature
+  padding 20px
+  li
+    padding 10px
 </style>

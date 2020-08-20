@@ -12,6 +12,7 @@ export default {
 </script>
 
 <style lang="stylus">
+@import '~@/common/style/reset';
 html, body
   margin 0
   padding 0

@@ -20,6 +20,46 @@ const routes = [
     name: 'feature',
     component: () => import(/* webpackChunkName: "feature" */ '../views/feature')
   },
+  {
+    path: '/component',
+    name: 'component',
+    component: () => import(/* webpackChunkName: "component" */ '../views/component')
+  },
+  {
+    path: '/animation',
+    name: 'animation',
+    component: () => import(/* webpackChunkName: "animation" */ '../views/animation')
+  },
+  {
+    path: '/composition',
+    name: 'composition',
+    component: () => import(/* webpackChunkName: "composition" */ '../views/composition')
+  },
+  {
+    path: '/advanced',
+    name: 'advanced',
+    component: () => import(/* webpackChunkName: "composition" */ '../views/advanced')
+  },
+  {
+    path: '/tool',
+    name: 'tool',
+    component: () => import(/* webpackChunkName: "tool" */ '../views/tool')
+  },
+  {
+    path: '/scale',
+    name: 'scale',
+    component: () => import(/* webpackChunkName: "scale" */ '../views/scale')
+  },
+  {
+    path: '/accessbility',
+    name: 'accessbility',
+    component: () => import(/* webpackChunkName: "accessbility" */ '../views/accessbility')
+  },
+  {
+    path: '/migaration',
+    name: 'migaration',
+    component: () => import(/* webpackChunkName: "migaration" */ '../views/migaration')
+  },
 ]
 
 const router = createRouter({

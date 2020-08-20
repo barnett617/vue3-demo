@@ -1,17 +1,36 @@
 <template>
   <div class="home">
-    <div class="nav">
-      <router-link to="/about">lifecycle</router-link>
-      <router-link to="/feature">feature</router-link>
+    <div class="nav" v-for="menu in menus" :key="menu.name">
+      <router-link :to="menu.link">{{menu.name}}</router-link>
     </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-
+import { getMenus } from '@/api'
 export default {
-  name: 'Home'
+  name: 'Home',
+  data() {
+    return {
+      menus: []
+    }
+  },
+  created() {
+    this.getData()
+  },
+  methods: {
+    async getData() {
+      const menus = await getMenus()
+      if (menus && menus.length) {
+        menus.map(item => {
+          item.link = '/' + item.link
+          return item
+        })
+      }
+      this.menus = menus
+    }
+  }
 }
 </script>
 
@@ -22,4 +41,5 @@ export default {
     display flex
     flex-direction column
     font-size 18px
+    padding 10px
 </style>
