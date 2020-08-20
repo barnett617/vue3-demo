@@ -2,6 +2,7 @@ import axios from 'axios'
 const COMMON_PREFIX = 'http://localhost'
 const getFeatureList = params => _post('/getList/feature', params)
 const getMenus = params => _post('/getList/menus', params)
+const getAdvanced = params => _post('/getList/advanced', params)
 
 const _post =  async (url, params = {}) => {
   const { data } = await axios.post(`${COMMON_PREFIX}${url}`, JSON.stringify(params))
@@ -11,5 +12,6 @@ const _post =  async (url, params = {}) => {
 
 export {
   getFeatureList,
-  getMenus
+  getMenus,
+  getAdvanced
 }

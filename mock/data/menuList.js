@@ -28,7 +28,13 @@ export default {
     {
       link: 'advanced',
       id: 'advanced',
-      name: '高级特性'
+      name: '高级特性',
+      submenus: [
+        {
+          id: 'reactivity',
+          name: '响应式'
+        }
+      ]
     },
     {
       link: 'tool',

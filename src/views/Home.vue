@@ -1,8 +1,16 @@
 <template>
   <div class="home">
-    <div class="nav" v-for="menu in menus" :key="menu.name">
-      <router-link :to="menu.link">{{menu.name}}</router-link>
-    </div>
+    <header>vue-next</header>
+    <main>
+      <aside>
+        <div class="nav" v-for="menu in menus" :key="menu.name">
+          <router-link :to="menu.link">{{menu.name}}</router-link>
+        </div>
+      </aside>
+      <div class="content">
+        <router-view/>
+      </div>
+    </main>
   </div>
 </template>
 
@@ -36,10 +44,23 @@ export default {
 
 <style lang="stylus" scoped>
 .home
-  padding 20px
-  .nav
+  height 100%
+  width 100%
+  display flex
+  flex-direction column
+  header
+    padding 20px
+    text-align center
+    font-weight 600
+    font-size 20px
+  main
     display flex
-    flex-direction column
-    font-size 18px
-    padding 10px
+    aside
+      .nav
+        display flex
+        flex-direction column
+        font-size 18px
+        padding 10px
+    .content
+      font-size 18px
 </style>
