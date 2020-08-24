@@ -1,7 +1,7 @@
 export default {
   data: [
     {
-      link: 'about',
+      link: '/home/about',
       id: 'lifecycle',
       name: '生命周期'
     },
