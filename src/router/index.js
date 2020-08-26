@@ -77,8 +77,18 @@ const routes = [
       {
         path: 'google',
         name: 'google',
-        component: () => import('../views/google')
-      }
+        component: () => import('../views/other/google')
+      },
+      {
+        path: 'vue3',
+        name: 'vue3',
+        component: () => import('../views/other/vue3')
+      },
+      {
+        path: 'clickout',
+        name: 'clickOutside',
+        component: () => import('../views/other/demo/click-outside')
+      },
     ]
   }
 

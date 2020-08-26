@@ -58,7 +58,6 @@ export default {
     {
       id: 'other',
       name: '其他',
-      // link: '/other',
       children: [
         {
           link: '/other/figure',
@@ -66,14 +65,19 @@ export default {
           name: 'figure'
         },
         {
-          // link: '/other/google',
+          link: '/other/google',
           id: 'other-google',
           name: 'google'
         },
         {
-          // link: '/other/vue3',
+          link: '/other/vue3',
           id: 'other-vue3',
           name: 'vue3'
+        },
+        {
+          link: '/other/clickout',
+          id: 'other-clickout',
+          name: 'click-outside'
         }
       ]
     },
