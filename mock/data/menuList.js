@@ -6,30 +6,29 @@ export default {
       name: '生命周期'
     },
     {
-      link: 'feature',
+      link: '/home/feature',
       id: 'feature',
       name: '特性'
     },
     {
-      link: 'component',
+      link: '/home/component',
       id: 'component',
       name: '组件'
     },
     {
-      link: 'animation',
+      link: '/home/animation',
       id: 'animation',
       name: '动画'
     },
     {
-      link: 'composition',
+      link: '/home/composition',
       id: 'composition',
       name: '组合'
     },
     {
-      link: 'advanced',
       id: 'advanced',
       name: '高级特性',
-      submenus: [
+      children: [
         {
           id: 'reactivity',
           name: '响应式'
@@ -37,24 +36,46 @@ export default {
       ]
     },
     {
-      link: 'tool',
+      link: '/home/tool',
       id: 'tool',
       name: '工具'
     },
     {
-      link: 'scale',
+      link: '/home/scale',
       id: 'scale',
       name: '规模化'
     },
     {
-      link: 'accessbility',
+      link: '/home/accessbility',
       id: 'accessbility',
       name: '可达性'
     },
     {
-      link: 'migaration',
+      link: '/home/migaration',
       id: 'migaration',
       name: '迁移'
+    },
+    {
+      id: 'other',
+      name: '其他',
+      // link: '/other',
+      children: [
+        {
+          link: '/other/figure',
+          id: 'other-figure',
+          name: 'figure'
+        },
+        {
+          // link: '/other/google',
+          id: 'other-google',
+          name: 'google'
+        },
+        {
+          // link: '/other/vue3',
+          id: 'other-vue3',
+          name: 'vue3'
+        }
+      ]
     },
   ]
 }
