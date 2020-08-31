@@ -6,9 +6,8 @@ export default {
       name: '生命周期'
     },
     {
-      link: '/home/feature',
       id: 'feature',
-      name: '特性'
+      name: '特性',
     },
     {
       link: '/home/component',
@@ -22,8 +21,20 @@ export default {
     },
     {
       link: '/home/composition',
-      id: 'composition',
-      name: '组合'
+      id: 'reusabilityAndComposition',
+      name: '复用和组合',
+      children: [
+        {
+          id: 'mixin',
+          name: '混入',
+          link: '/home/composition/mixin',
+        },
+        {
+          id: 'mixin',
+          name: '混入',
+          link: '/home/composition/mixin',
+        },
+      ]
     },
     {
       id: 'advanced',

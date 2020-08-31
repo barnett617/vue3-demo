@@ -15,7 +15,8 @@
               </li>
             </ul>
           </div>
-          <router-link class="nav-without-children" v-else :to="menu.link">{{menu.name}}</router-link>
+          <router-link v-else-if="menu.link" class="nav-without-children" :to="menu.link">{{menu.name}}</router-link>
+          <p v-else>{{menu.name}}</p>
         </div>
       </aside>
       <div class="content">
